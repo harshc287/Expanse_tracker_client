@@ -89,6 +89,7 @@ return (
           type="text"
           className="form-control"
           placeholder="e.g. Food, Rent"
+          required
           value={form.category}
           onChange={(e) =>
             setForm({ ...form, category: e.target.value })
@@ -103,6 +104,7 @@ return (
           type="date"
           className="form-control"
           value={form.date}
+          required
           onChange={(e) =>
             setForm({ ...form, date: e.target.value })
           }
@@ -117,6 +119,7 @@ return (
           className="form-control"
           placeholder="Optional description"
           value={form.description}
+          required
           onChange={(e) =>
             setForm({ ...form, description: e.target.value })
           }
